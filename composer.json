@@ -1,4 +1,5 @@
 {
+    "type": "package",
     "name": "ptt/pace_berlin_hello-theme-child",
     "description": "Forked hello child theme",
     "keywords": ["wordpress", "plugin", "theme"],
@@ -11,8 +12,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "type": "wordpress-theme",
+    "version": "dev-master",
     "require": {
         "php": ">=8.0",
-        "composer/installers": "^1.0"
+        "composer/installers": "^2.2",
+        "wpackagist-plugin/elementor": "^3.25",
+        "elementor/hello-theme": "^3.1",
     }
 }
