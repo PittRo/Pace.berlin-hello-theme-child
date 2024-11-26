@@ -1,11 +1,11 @@
-=== Hello Elementor Child ===
+=== events by PACE berlin - Hello Elementor Child ===
 
-Contributors: elemntor
+Contributors: elementor
 Requires at least: 5.9
 Tested up to: 6.2
 Stable tag: 2.0.0
 Version: 2.0.0
-Requires PHP: 5.6
+Requires PHP: 8.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
@@ -27,31 +27,11 @@ The theme supports common WordPress features which can be extended using a child
 3. Click on the 'Activate' button to use your new theme right away.
 4. Navigate to Elementor and start building your site.
 
-== Copyright ==
+customized by PTT
 
-This theme, like WordPress, is distributed under the terms of GPL.
-Use it as your springboard to building a site with ***Elementor***.
+== build process ==
+1. ddev ssh
+2. cd web/app/themes/hello-theme-master/header-footer.css
+3. npm install - if not already installed
+4. npm run build:prod or see package.json for other options
 
-Hello Elementor bundles the following third-party resources:
-
-Font Awesome icons for theme screenshot
-License: SIL Open Font License, version 1.1.
-Source: https://fontawesome.com/v4.7.0/
-
-Image for theme screenshot, Copyright Jason Blackeye
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/4B83RD7BV9
-
-== Changelog ==
-
-= 2.0.0 - 2023-04-27 =
-* Load child theme stylesheet after parent theme stylesheet
-* Added a constant for better version management
-* Prevent direct access to `functions.php`
-* Optimize screenshot image
-* Update `Requires at least: 5.9`
-* Update `Tested up to: 6.2`
-* Update `Theme URI` link
-
-= 1.0.0 - 2019-05-23 =
-* Initial public release

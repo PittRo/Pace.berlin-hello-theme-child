@@ -21,16 +21,20 @@ define( 'HELLO_ELEMENTOR_CHILD_VERSION', '2.0.0' );
  *
  * @return void
  */
-function hello_elementor_child_scripts_styles() {
 
+add_filter('hello_elementor_enqueue_style', '__return_false'); // Deaktiviert style.min.css
+#add_filter('hello_elementor_enqueue_theme_style', '__return_false'); // Deaktiviert theme.min.css
+#add_filter('hello_elementor_enqueue_header_footer', '__return_false'); // Deaktiviert header-footer.min.css
+
+
+function hello_elementor_child_scripts_styles() {
 	wp_enqueue_style(
 		'hello-elementor-child-style',
 		get_stylesheet_directory_uri() . '/style.css',
-		[
-			'hello-elementor-theme-style',
-		],
-		HELLO_ELEMENTOR_CHILD_VERSION
+		[], // Keine Abhängigkeiten, da Parent-Styles entfernt wurden
+		'1.0' // Version des Child-Stylesheets
 	);
-
 }
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
+add_action('wp_enqueue_scripts', 'hello_elementor_child_scripts_styles');
+
+
