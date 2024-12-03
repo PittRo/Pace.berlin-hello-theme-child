@@ -4,7 +4,7 @@ Theme URI: https://github.com/elementor/hello-theme-child/
 Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
 Author: Elementor Team
 Author URI: https://elementor.com/
-Template: hello-theme-master
+Template: hello-theme
 Version: 2.0.0
 Text Domain: hello-elementor-child
 License: GNU General Public License v3 or later.
@@ -12,8 +12,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
 */
 
-@import "../../../hello-theme-master/assets/scss/reset/variables";
-@import "../../../hello-theme-master/assets/scss/reset/reset";
-@import "../../../hello-theme-master/assets/scss/reset/forms";
-@import "../../../hello-theme-master/assets/scss/reset/table";
-@import "../../../hello-theme-master/assets/scss/reset/list";
+@import "../../../hello-theme/assets/scss/reset/variables";
+@import "../../../hello-theme/assets/scss/reset/reset";
+@import "../../../hello-theme/assets/scss/reset/forms";
+@import "../../../hello-theme/assets/scss/reset/table";
+@import "../../../hello-theme/assets/scss/reset/list";
